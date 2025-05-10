@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/utopiaa/static/css/main.e4371200.css",
+    "main.css": "/utopiaa/static/css/main.5b1de3bc.css",
     "main.js": "/utopiaa/static/js/main.5e3ce81e.js",
     "static/media/logo2.png": "/utopiaa/static/media/logo2.aae54132df7075447e39.png",
     "static/media/icon2.png": "/utopiaa/static/media/icon2.b698e9ddf8058f44faff.png",
     "index.html": "/utopiaa/index.html",
-    "main.e4371200.css.map": "/utopiaa/static/css/main.e4371200.css.map",
+    "main.5b1de3bc.css.map": "/utopiaa/static/css/main.5b1de3bc.css.map",
     "main.5e3ce81e.js.map": "/utopiaa/static/js/main.5e3ce81e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4371200.css",
+    "static/css/main.5b1de3bc.css",
     "static/js/main.5e3ce81e.js"
   ]
 }
