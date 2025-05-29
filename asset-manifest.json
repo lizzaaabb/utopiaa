@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/utopiaa/static/css/main.8d39013a.css",
-    "main.js": "/utopiaa/static/js/main.b81528b9.js",
+    "main.css": "/utopiaa/static/css/main.b274e5cb.css",
+    "main.js": "/utopiaa/static/js/main.ab4fbb90.js",
     "static/media/bag1.jpg": "/utopiaa/static/media/bag1.822d126622b6092862b2.jpg",
     "static/media/bag4.jpg": "/utopiaa/static/media/bag4.bd7900f5727bed975dcb.jpg",
     "static/media/bag2.jpg": "/utopiaa/static/media/bag2.da2ce83c8741eb0aaa34.jpg",
@@ -13,12 +13,13 @@
     "static/media/re5.jpg": "/utopiaa/static/media/re5.1cfa17bcc309bb112b3f.jpg",
     "static/media/re4.jpg": "/utopiaa/static/media/re4.9d09eb2000f26b303371.jpg",
     "static/media/logo2.png": "/utopiaa/static/media/logo2.aae54132df7075447e39.png",
+    "static/media/icn3.png": "/utopiaa/static/media/icn3.f1cc80fbf3359b62179c.png",
     "index.html": "/utopiaa/index.html",
-    "main.8d39013a.css.map": "/utopiaa/static/css/main.8d39013a.css.map",
-    "main.b81528b9.js.map": "/utopiaa/static/js/main.b81528b9.js.map"
+    "main.b274e5cb.css.map": "/utopiaa/static/css/main.b274e5cb.css.map",
+    "main.ab4fbb90.js.map": "/utopiaa/static/js/main.ab4fbb90.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d39013a.css",
-    "static/js/main.b81528b9.js"
+    "static/css/main.b274e5cb.css",
+    "static/js/main.ab4fbb90.js"
   ]
 }
