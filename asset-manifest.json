@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/utopiaa/static/css/main.04109d2c.css",
-    "main.js": "/utopiaa/static/js/main.055738ce.js",
+    "main.css": "/utopiaa/static/css/main.00f60867.css",
+    "main.js": "/utopiaa/static/js/main.ee97c2a3.js",
     "static/media/bag1.jpg": "/utopiaa/static/media/bag1.822d126622b6092862b2.jpg",
     "static/media/bag4.jpg": "/utopiaa/static/media/bag4.bd7900f5727bed975dcb.jpg",
     "static/media/bag2.jpg": "/utopiaa/static/media/bag2.da2ce83c8741eb0aaa34.jpg",
@@ -12,14 +12,20 @@
     "static/media/re3.jpg": "/utopiaa/static/media/re3.dc41f0994e949270e05a.jpg",
     "static/media/re5.jpg": "/utopiaa/static/media/re5.1cfa17bcc309bb112b3f.jpg",
     "static/media/re4.jpg": "/utopiaa/static/media/re4.9d09eb2000f26b303371.jpg",
+    "static/media/geo7.jpg": "/utopiaa/static/media/geo7.be7ef73c2efa5a68f6a0.jpg",
+    "static/media/geo2.jpg": "/utopiaa/static/media/geo2.9d565fe2da2b92142d76.jpg",
+    "static/media/geo4.jpg": "/utopiaa/static/media/geo4.b389238ef33056ab7842.jpg",
+    "static/media/geo6.jpg": "/utopiaa/static/media/geo6.1584ab5e7b39d2eaa5c4.jpg",
+    "static/media/geo5.jpg": "/utopiaa/static/media/geo5.291d23fa7cc94d32c1df.jpg",
+    "static/media/geo8.jpg": "/utopiaa/static/media/geo8.6cb377159425b9b100b1.jpg",
     "static/media/logo2.png": "/utopiaa/static/media/logo2.aae54132df7075447e39.png",
     "static/media/icn3.png": "/utopiaa/static/media/icn3.f1cc80fbf3359b62179c.png",
     "index.html": "/utopiaa/index.html",
-    "main.04109d2c.css.map": "/utopiaa/static/css/main.04109d2c.css.map",
-    "main.055738ce.js.map": "/utopiaa/static/js/main.055738ce.js.map"
+    "main.00f60867.css.map": "/utopiaa/static/css/main.00f60867.css.map",
+    "main.ee97c2a3.js.map": "/utopiaa/static/js/main.ee97c2a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.04109d2c.css",
-    "static/js/main.055738ce.js"
+    "static/css/main.00f60867.css",
+    "static/js/main.ee97c2a3.js"
   ]
 }
