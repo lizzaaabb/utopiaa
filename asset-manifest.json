@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/utopiaa/static/css/main.33a63293.css",
-    "main.js": "/utopiaa/static/js/main.ac07460b.js",
+    "main.js": "/utopiaa/static/js/main.44e1d9eb.js",
     "static/media/bag3.jpg": "/utopiaa/static/media/bag3.a241530648ba6a0c2013.jpg",
     "static/media/bag1.jpg": "/utopiaa/static/media/bag1.c4af30857e3b4e227acb.jpg",
     "static/media/bag2.jpg": "/utopiaa/static/media/bag2.f1772aa73bb569df1e9d.jpg",
@@ -23,10 +23,10 @@
     "static/media/phone.png": "/utopiaa/static/media/phone.62bb06542ddca2a70cdd.png",
     "index.html": "/utopiaa/index.html",
     "main.33a63293.css.map": "/utopiaa/static/css/main.33a63293.css.map",
-    "main.ac07460b.js.map": "/utopiaa/static/js/main.ac07460b.js.map"
+    "main.44e1d9eb.js.map": "/utopiaa/static/js/main.44e1d9eb.js.map"
   },
   "entrypoints": [
     "static/css/main.33a63293.css",
-    "static/js/main.ac07460b.js"
+    "static/js/main.44e1d9eb.js"
   ]
 }
