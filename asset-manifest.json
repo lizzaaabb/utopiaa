@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.css": "/utopiaa/static/css/main.e2c22e3d.css",
-    "main.js": "/utopiaa/static/js/main.b848eb44.js",
-    "static/media/bag1.jpg": "/utopiaa/static/media/bag1.c5da179f747a6a033537.jpg",
-    "static/media/bag4.jpg": "/utopiaa/static/media/bag4.2910f44c87246d81c4bd.jpg",
-    "static/media/bag5.jpg": "/utopiaa/static/media/bag5.33e9ff2afc0402359c99.jpg",
-    "static/media/bag2.jpg": "/utopiaa/static/media/bag2.f0b4ca08780db5f97daa.jpg",
-    "static/media/re2.jpg": "/utopiaa/static/media/re2.0c3bdbe66f907beb5517.jpg",
-    "static/media/bag3.jpg": "/utopiaa/static/media/bag3.5687e0c87b8f22647fda.jpg",
-    "static/media/re1.jpg": "/utopiaa/static/media/re1.c9532cb5fcbce014e077.jpg",
-    "static/media/re3.jpg": "/utopiaa/static/media/re3.4545960c1bc425b1aad0.jpg",
-    "static/media/re4.jpg": "/utopiaa/static/media/re4.52f5a60e141a6cc5cafe.jpg",
-    "static/media/re5.jpg": "/utopiaa/static/media/re5.b27ebb50f7a801309458.jpg",
+    "main.css": "/utopiaa/static/css/main.33a63293.css",
+    "main.js": "/utopiaa/static/js/main.ac07460b.js",
+    "static/media/bag3.jpg": "/utopiaa/static/media/bag3.a241530648ba6a0c2013.jpg",
+    "static/media/bag1.jpg": "/utopiaa/static/media/bag1.c4af30857e3b4e227acb.jpg",
+    "static/media/bag2.jpg": "/utopiaa/static/media/bag2.f1772aa73bb569df1e9d.jpg",
+    "static/media/bag4.jpg": "/utopiaa/static/media/bag4.d17594e28a23c5f6be93.jpg",
+    "static/media/bag5.jpg": "/utopiaa/static/media/bag5.86478f3046a5ebc9f7aa.jpg",
+    "static/media/re2.jpg": "/utopiaa/static/media/re2.0af848fc58b74c6418a7.jpg",
+    "static/media/re1.jpg": "/utopiaa/static/media/re1.ef802a48fe12c413ea59.jpg",
+    "static/media/re3.jpg": "/utopiaa/static/media/re3.0ad70f749136b2d9d7e4.jpg",
+    "static/media/re5.jpg": "/utopiaa/static/media/re5.97fbc687a1b533a8a9ad.jpg",
+    "static/media/re4.jpg": "/utopiaa/static/media/re4.08d7cab34ce41cb6d9c5.jpg",
+    "static/media/geo7.jpg": "/utopiaa/static/media/geo7.be7ef73c2efa5a68f6a0.jpg",
+    "static/media/geo2.jpg": "/utopiaa/static/media/geo2.9d565fe2da2b92142d76.jpg",
+    "static/media/geo4.jpg": "/utopiaa/static/media/geo4.b389238ef33056ab7842.jpg",
+    "static/media/geo6.jpg": "/utopiaa/static/media/geo6.1584ab5e7b39d2eaa5c4.jpg",
+    "static/media/geo5.jpg": "/utopiaa/static/media/geo5.291d23fa7cc94d32c1df.jpg",
+    "static/media/geo8.jpg": "/utopiaa/static/media/geo8.6cb377159425b9b100b1.jpg",
     "static/media/logo2.png": "/utopiaa/static/media/logo2.aae54132df7075447e39.png",
     "static/media/icn3.png": "/utopiaa/static/media/icn3.f1cc80fbf3359b62179c.png",
     "static/media/phone.png": "/utopiaa/static/media/phone.62bb06542ddca2a70cdd.png",
     "index.html": "/utopiaa/index.html",
-    "main.e2c22e3d.css.map": "/utopiaa/static/css/main.e2c22e3d.css.map",
-    "main.b848eb44.js.map": "/utopiaa/static/js/main.b848eb44.js.map"
+    "main.33a63293.css.map": "/utopiaa/static/css/main.33a63293.css.map",
+    "main.ac07460b.js.map": "/utopiaa/static/js/main.ac07460b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2c22e3d.css",
-    "static/js/main.b848eb44.js"
+    "static/css/main.33a63293.css",
+    "static/js/main.ac07460b.js"
   ]
 }
