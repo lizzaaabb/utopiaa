@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.dffac04b.css",
-    "main.js": "/static/js/main.dc0fa8bd.js",
-    "static/media/tour3.jpeg": "/static/media/tour3.c232c418a7f63fb800a1.jpeg",
-    "static/media/tour2.jpeg": "/static/media/tour2.9394dde6e81bb9a87abb.jpeg",
-    "static/media/tour1.jpeg": "/static/media/tour1.114a8a56e7130442cf60.jpeg",
-    "static/media/tour4.jpeg": "/static/media/tour4.a2e681fb70b3b5e163df.jpeg",
+    "main.js": "/static/js/main.e302338a.js",
+    "static/media/tour1.jpg": "/static/media/tour1.19c1838fa27895810a01.jpg",
+    "static/media/tour3.jpg": "/static/media/tour3.ae42cbc71a8d4d77056e.jpg",
+    "static/media/tour2.jpg": "/static/media/tour2.2fe97b8c66c6c5d265d7.jpg",
+    "static/media/tour4.jpg": "/static/media/tour4.7b515bd51b310fd5254a.jpg",
     "static/media/bag3.jpg": "/static/media/bag3.a241530648ba6a0c2013.jpg",
     "static/media/bag1.jpg": "/static/media/bag1.c4af30857e3b4e227acb.jpg",
     "static/media/bag2.jpg": "/static/media/bag2.f1772aa73bb569df1e9d.jpg",
@@ -27,10 +27,10 @@
     "static/media/phone.png": "/static/media/phone.62bb06542ddca2a70cdd.png",
     "index.html": "/index.html",
     "main.dffac04b.css.map": "/static/css/main.dffac04b.css.map",
-    "main.dc0fa8bd.js.map": "/static/js/main.dc0fa8bd.js.map"
+    "main.e302338a.js.map": "/static/js/main.e302338a.js.map"
   },
   "entrypoints": [
     "static/css/main.dffac04b.css",
-    "static/js/main.dc0fa8bd.js"
+    "static/js/main.e302338a.js"
   ]
 }
