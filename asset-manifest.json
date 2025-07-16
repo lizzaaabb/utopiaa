@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd3d92c4.css",
-    "main.js": "/static/js/main.c64361fb.js",
+    "main.css": "/static/css/main.629f78ca.css",
+    "main.js": "/static/js/main.23ec7c85.js",
     "static/media/tour1.jpg": "/static/media/tour1.19c1838fa27895810a01.jpg",
     "static/media/tour3.jpg": "/static/media/tour3.ae42cbc71a8d4d77056e.jpg",
     "static/media/tour2.jpg": "/static/media/tour2.2fe97b8c66c6c5d265d7.jpg",
@@ -26,11 +26,11 @@
     "static/media/icn3.png": "/static/media/icn3.f1cc80fbf3359b62179c.png",
     "static/media/phone.png": "/static/media/phone.62bb06542ddca2a70cdd.png",
     "index.html": "/index.html",
-    "main.fd3d92c4.css.map": "/static/css/main.fd3d92c4.css.map",
-    "main.c64361fb.js.map": "/static/js/main.c64361fb.js.map"
+    "main.629f78ca.css.map": "/static/css/main.629f78ca.css.map",
+    "main.23ec7c85.js.map": "/static/js/main.23ec7c85.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd3d92c4.css",
-    "static/js/main.c64361fb.js"
+    "static/css/main.629f78ca.css",
+    "static/js/main.23ec7c85.js"
   ]
 }
