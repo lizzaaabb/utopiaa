@@ -1,66 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@700&display=swap');
-
-
 @import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/boowie');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-/* @font-face {
-    font-family: 'Boowie'; 
-    src: url('../fonts/BOOWIE.ttf') format('truetype'); 
-    font-weight: normal; 
-    font-style: normal; 
-}
-*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
 }
 .heading-body{
     background-color: black;
     height: 100vh;
     width: 100%;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Changed from space-around to space-between */
+    justify-content: space-between;
     flex-direction: row;
     position: relative;
     height: 90px;
     width: 100%;
     box-shadow: 0 0 0 0.25px rgba(255, 255, 255, 1);
-    padding: 0 20px; /* Add some horizontal padding */
+    padding: 0 20px;
+    z-index: 10; /* Ensure header is above other content */
 }
 
+/* In your CSS file */
+
+.discover-tours {
+    text-decoration: none; /* Removes the underline from the link */
+  }
+  
+  .discover-tours:hover {
+    text-decoration: none; /* Ensures no underline appears on hover */
+    /* You might want to add other hover effects here, like color change */
+    /* color: #your-hover-color; */
+  }
+  
+  /* Optional: If you want to remove underlines from ALL ScrollLinks as well */
+  .menu-items .ScrollLink {
+    text-decoration: none;
+  }
+  .contact{
+    text-decoration: none;
+  }
+  .menu-items .ScrollLink:hover {
+    text-decoration: none;
+  }
 /* Header Sections */
 .header1, .header2, .header3 {
-    flex: 1; /* Each takes equal width */
+    flex: 1;
     display: flex;
     align-items: center;
 }
 
 .header1 {
-    justify-content: flex-start; /* Logo aligned to the left */
+    justify-content: flex-start;
     margin-left: 60px;
 }
 
 .header2 {
-    justify-content: center; /* Text centered */
+    justify-content: center;
 }
 
 .header3 {
-    justify-content: flex-end; /* Contact/menu aligned to the right */
+    justify-content: flex-end;
     margin-right: 60px;
 }
 
@@ -75,7 +89,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 8px;
-
 }
 
 .header2-text-container h2{
@@ -101,26 +114,25 @@
 }
 
 .forcontact {
-    position: relative; /* Add positioning for the pseudo-element */
     cursor: pointer;
-    padding-right: 12px; /* Add padding to the right of the text */
-    display: flex; /* Using flex to vertically center the text */
+    padding-right: 12px;
+    display: flex;
     align-items: center;
     transition: all .3s ease-in-out;
 }
+
 .forcontact:hover {
     color: #fff;
     transform: translateY(-2px);
     transition: all .3s ease-in-out;
 }
 
-/* Add a pseudo-element for the border */
 .forcontact::after {
     content: '';
     position: absolute;
     right: 0;
-    top: -10px; /* Compensate for the container padding */
-    bottom: -10px; /* Compensate for the container padding */
+    top: -10px;
+    bottom: -10px;
     width: 0.1px;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -128,7 +140,7 @@
 .formenu {
     display: flex;
     align-items: center;
-    padding-left: 2px; /* Add padding to the left of the hamburger */
+    padding-left: 2px;
     cursor: pointer;
 }
 
@@ -136,6 +148,7 @@
     width: 32px;
     cursor: pointer;
 }
+
 .bar:nth-child(2) {
     width: 26px;
     cursor: pointer;
@@ -164,16 +177,12 @@
     font-family: "Urbanist", sans-serif;
     font-weight: 300;
     cursor: pointer;
-    
 }
 
-
-
 /*sidebar */
-
 .sidebar-container{
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 2000; /* Ensure sidebar is on top */
     top: 0;
     left: -100%;
     width: 50%;
@@ -183,23 +192,69 @@
     justify-content: space-evenly;
     flex-direction: column;
     background-color: black;
-
     background: rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(9px);
     border-right: 0.1px solid rgba(255, 255, 255, 0.3);
-
     background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.18) 80%, /* Solid color for 85% from top */
-        rgba(255, 255, 255, 0) 100% /* Fade to transparent at bottom 15% */
+        rgba(255, 255, 255, 0.18) 80%,
+        rgba(255, 255, 255, 0) 100%
     );
     transition: all 0.5s ease-in-out;
-
 }
+
 .sidebar-container.open {
     left: 0; 
+}
+
+/* Close button for sidebar */
+.sidebar-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 0;
+    height: 30px;
+    width: 30px;
+    transition: all .3s ease;
+    z-index: 21;
+    opacity: 0.4;
+}
+
+.close-line {
+    background-color: #fff;
+    height: 2px;
+    width: 25px;
+    transition: all .3s ease;
+    cursor: pointer;
+    position: absolute;
+}
+
+.close-line:first-child {
+    transform: rotate(45deg);
+}
+
+.close-line:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.sidebar-close:hover .close-line {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+}
+
+.sidebar-close:hover .close-line:first-child {
+    transform: rotate(45deg) scale(1.1);
+}
+
+.sidebar-close:hover .close-line:nth-child(2) {
+    transform: rotate(-45deg) scale(1.1);
 }
 
 .sidebar-text{
@@ -230,15 +285,24 @@
     gap: 35px;
 }
 
-.menu-items a{
+.menu-items a {
     font-family: "Urbanist", sans-serif;
-    font-weight: 100;
+    font-weight: 320;
     font-size: 1.3rem;
     text-decoration: none;
+    letter-spacing: 0.5px;
     color: #fff;
     transition: all .3s ease;
-
+    position: relative;
+    cursor: pointer;
 }
+
+.menu-items a:hover {
+
+    transform: scale(1.05);
+}
+
+
 
 .social-media{
     display: flex;
@@ -263,7 +327,6 @@
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, 1);
-    
 }
 
 .terms{
@@ -271,6 +334,16 @@
     flex-direction: column;
     margin-left: 20px;
     gap: 15px;
+}
+
+.terms a{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+    
 }
 
 .terms p{
@@ -282,7 +355,6 @@
     transition: all .3s ease;
 }
 
-
 .hamburger.active .bar:first-child {
     transform: translateY(5.1px) rotate(45deg);
     width: 32px;
@@ -293,98 +365,26 @@
     width: 32px;
 }
 
-/* landing */
-
-.landing-container{
+.icons{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.landing-title{
-    font-family: "Urbanist", sans-serif;
-    font-size: 3.7rem;
-    font-weight: 200;
-    letter-spacing: 1.5px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 800px;
-}
-.second-title{
-    font-family: "Urbanist", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 100;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-/* Discover more Circle */
-
-.discover-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    position: absolute;
-    top: 160%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 0.1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    padding: 60px 20px 41px;
+    margin-left: 15px;
     cursor: pointer;
-    transition: all .3s ease-in-out;
 }
 
-.discover-container:hover{
-    background-color: hsla(0, 0%, 97%, .123);
+.icon{
+    height: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-.discover-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.icon:hover{
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
 }
-
-.discover-text p{
-    font-family: "Urbanist", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #fff;
-}
-
-.discover-bars{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 7px;
-}
-
-.discover-bar{
-    background-color: #fff;
-    height: 1.5px;
-    width: 34px;
-}
-
-.discover-bar2{
-    background-color: #fff;
-    height: 1.5px;
-    width: 26px;
-}
-
 
 @media (max-width: 359px) {
-
     .header1{
         display: none;
     }
@@ -413,26 +413,6 @@
     .bar:nth-child(2) {
         width: 22px;
     }
-    .landing-title {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-    }
-
-    .second-title p{
-        font-size: 0.8rem;
-        width: 340px;
-    }
-
-    .discover-container{
-        margin-top: 50px;
-        gap: 25px;
-        padding: 47px 20px 41px;
-    }
-
-    .discover-text p {
-        font-weight: 400;
-        font-size: 0.8rem;
-    }
 
     .sidebar-text h3 {
         font-size: 1.1rem;
@@ -449,26 +429,32 @@
     .terms p {
         font-size: 0.9rem;
     }
+    .terms a{
+        font-size: 0.9rem;
+    }
 
     .social-media p {
-        font-family: "Urbanist", sans-serif;
-        font-weight: 100;
         font-size: 0.7rem;
-        color: #fff;
-        cursor: pointer;
     }
 
     .social-media {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
         flex-direction: column;
-        gap: 15px;
-        margin-left: 20px;
+    }
+
+    .icon{
+        height: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .icons{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+    .terms{
+        margin-top: -50px;
     }
 
     
-
 }
 
 @media (min-width: 360px) and (max-width: 480px) {
@@ -477,12 +463,13 @@
     }
 
     .header2-text-container h2{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .header2-text-container p{
         font-size: 0.8rem;
         text-align: center;
+        font-weight: 320;
     }
 
     .contact-container{
@@ -503,67 +490,70 @@
 
     .bar:nth-child(2) {
         width: 22px;
-    }
-    .landing-title {
-        font-size: 1.6rem;
-        margin-bottom: 10px;
-    }
-
-    .second-title p{
-        font-size: 0.8rem;
-        width: 340px;
-    }
-
-    .discover-container{
-        margin-top: 50px;
-        gap: 25px;
-        padding: 47px 20px 41px;
-    }
-
-    .discover-text p {
-        font-weight: 400;
-        font-size: 0.8rem;
     }
 
     /* sidebar */
     .sidebar-text h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-top: -45px;
     }
 
     .sidebar-text p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        font-weight: 320;
+    }
+
+    .menu-items{
+        margin-top: -60px;
     }
 
     .menu-items a {
         font-size: 1rem;
+        font-weight: 320;
     }
 
     .terms p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+    .terms a{
+        font-size: 1rem;
+        letter-spacing: 0.5px;
     }
 
     .social-media p {
-        font-family: "Urbanist", sans-serif;
-        font-weight: 100;
-        font-size: 0.7rem;
-        color: #fff;
-        cursor: pointer;
+        font-size: 0.9rem;
     }
 
     .social-media {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
         flex-direction: column;
-        gap: 15px;
-        margin-left: 20px;
+        margin-top: -50px;
     }
-
-    
+    .icon{
+        height: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .icons{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+    .terms{
+        margin-top: -70px;
+    }
+    .line{
+        margin-top: -80px;
+    }
+    .sidebar-container{
+        width: 60%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
-
+    .sidebar-container{
+        width: 60%;
+    }
     .header1{
         display: none;
     }
@@ -596,30 +586,11 @@
     .bar:nth-child(2) {
         width: 22px;
     }
-    .landing-title {
-        font-size: 1.9rem;
-        margin-bottom: 10px;
-    }
 
-    .second-title p{
-        font-size: 0.9rem;
-        width: 430px;
-    }
-
-    .discover-container{
-        margin-top: 50px;
-        gap: 25px;
-        padding: 47px 20px 41px;
-    }
-
-    .discover-text p {
-        font-weight: 400;
-        font-size: 0.8rem;
-    }
-
-     /* sidebar */
-     .sidebar-text h3 {
+    /* sidebar */
+    .sidebar-text h3 {
         font-size: 1.5rem;
+        margin-top: -30px;
     }
 
     .sidebar-text p {
@@ -633,28 +604,36 @@
     .terms p {
         font-size: 1.1rem;
     }
+    .terms a{
+        font-size: 1.1rem;
+    }
 
     .social-media p {
-        font-family: "Urbanist", sans-serif;
-        font-weight: 100;
         font-size: 1rem;
-        color: #fff;
-        cursor: pointer;
     }
 
     .social-media {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
         flex-direction: column;
-        gap: 15px;
-        margin-left: 20px;
     }
 
+    .icons{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+    .icon{
+        height: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .terms{
+        margin-top: -70px;
+    }
+    .line{
+        margin-top: -80px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 767px) {
-
     .header1{
         display: none;
     }
@@ -687,29 +666,9 @@
     .bar:nth-child(2) {
         width: 22px;
     }
-    .landing-title {
-        font-size: 2.4rem;
-        margin-bottom: 10px;
-    }
 
-    .second-title p{
-        font-size: 1rem;
-        width: 530px;
-    }
-
-    .discover-container{
-        margin-top: 50px;
-        gap: 25px;
-        padding: 47px 20px 41px;
-    }
-
-    .discover-text p {
-        font-weight: 400;
-        font-size: 0.8rem;
-    }
-
-     /* sidebar */
-     .sidebar-text h3 {
+    /* sidebar */
+    .sidebar-text h3 {
         font-size: 1.5rem;
     }
 
@@ -724,28 +683,26 @@
     .terms p {
         font-size: 1.1rem;
     }
+    .terms a{
+        font-size: 1.1rem;
+    }
 
     .social-media p {
-        font-family: "Urbanist", sans-serif;
-        font-weight: 100;
         font-size: 1rem;
-        color: #fff;
-        cursor: pointer;
     }
 
     .social-media {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
         flex-direction: column;
-        gap: 15px;
-        margin-left: 20px;
     }
-
+    .icons{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 864px) {
-
     .header2-text-container h2{
         font-size: 1.4rem;
     }
@@ -773,26 +730,6 @@
 
     .bar:nth-child(2) {
         width: 22px;
-    }
-    .landing-title {
-        font-size: 2.6rem;
-        margin-bottom: 10px;
-    }
-
-    .second-title p{
-        font-size: 1rem;
-        width: 530px;
-    }
-
-    .discover-container{
-        margin-top: 50px;
-        gap: 25px;
-        padding: 47px 20px 41px;
-    }
-
-    .discover-text p {
-        font-weight: 400;
-        font-size: 0.8rem;
     }
 
     /* sidebar */
@@ -812,31 +749,98 @@
         font-size: 1.1rem;
     }
 
+    .terms a{
+        font-size: 1.1rem;
+    }
+
     .social-media p {
-        font-family: "Urbanist", sans-serif;
-        font-weight: 100;
         font-size: 1rem;
-        color: #fff;
-        cursor: pointer;
     }
 
     .social-media {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
         flex-direction: column;
-        gap: 15px;
-        margin-left: 20px;
     }
-
+    .icons{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
 }
 
 @media (min-width: 865px) and (max-width: 1024px) {
-
-    .landing-title {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
+    /* Any specific styles needed for this breakpoint */
 }
+
+
+
+#home{
+    scroll-margin-top: 100vh;
+}
+
+
+/* Responsive media queries for sidebar close button */
+@media (max-width: 359px) {
+    .sidebar-close {
+        top: 20px;
+        right: 20px;
+        height: 24px;
+        width: 24px;
+    }
+    
+    .close-line {
+        height: 1.5px;
+        width: 20px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .sidebar-close {
+        top: 22px;
+        right: 22px;
+        height: 26px;
+        width: 26px;
+    }
+    
+    .close-line {
+        height: 1.5px;
+        width: 21px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .sidebar-close {
+        top: 25px;
+        right: 25px;
+        height: 28px;
+        width: 28px;
+    }
+    
+    .close-line {
+        height: 1.8px;
+        width: 23px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .sidebar-close {
+        top: 28px;
+        right: 28px;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .close-line {
+        height: 2px;
+        width: 24px;
+    }
+}
+
+#n{
+    text-decoration: none;
+}
+
+
+/* webkits */
+
+
 

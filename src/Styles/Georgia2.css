@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/boowie');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base Styles */
+/* Add these styles to your Georgia2.css */
+
+.georgia2-body{
+    background: #201f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.georgia2-content {
+    padding: 40px 20px;
+  }
+     
+.georgia2-cubes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+     
+.georgia2-cube {
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+     
+.georgia2-cube-overlay {
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+     
+.georgia2-cube-title {
+    margin: 0 0 15px 0;
+    color: white;
+    font-weight: bold;
+  }
+     
+.georgia2-cube-description {
+    margin: 0;
+    color: white;
+    line-height: 1.5;
+  }
+     
+/* RTL support */
+.rtl .georgia2-cube {
+    text-align: right;
+    direction: rtl;
+  }
+
+.georgia2-cube:hover {
+    transform: scale(1.05);
+   }
+       
+.georgia2-cube:hover .georgia2-cube-overlay {
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+   }
+
+.georgia2-cube-description{
+    font-size: 1.05rem;
+    font-family: "urbanist", sans-serif;
+    text-shadow: 0.7px 0.7px 1.2px rgba(0, 0, 0, 0.3);
+   }
+
+.georgia2-cube-title{
+    font-size: 1.5rem;
+    font-family: "boowie", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0.7px 0.7px 1.2px rgba(0, 0, 0, 0.3);
+   }
+     
+/* Responsive design */
+@media (max-width: 768px) {
+    .georgia2-cubes-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+/* Additional responsive breakpoints */
+@media (max-width: 359px) {
+    .georgia2-content {
+        padding: 20px 10px;
+    }
+    .georgia2-cubes-grid {
+        max-width: 280px;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .georgia2-content {
+        padding: 25px 15px;
+    }
+    .georgia2-cubes-grid {
+        max-width: 320px;
+        gap: 18px;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .georgia2-content {
+        padding: 30px 20px;
+    }
+    .georgia2-cubes-grid {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .georgia2-cubes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 864px) {
+    .georgia2-cubes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        gap: 25px;
+    }
+}
+
+
+
+/* webkits */
+
+/* Cross-Browser Compatibility Fixes for Georgia2 */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Font fallbacks for better compatibility */
+.georgia2-cube-title {
+    font-family: 'boowie', 'Arial Black', Arial, sans-serif;
+}
+
+.georgia2-cube-description {
+    font-family: 'urbanist', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Enhanced backdrop-filter support */
+.georgia2-cube {
+    -webkit-backdrop-filter: blur(10.6px);
+    backdrop-filter: blur(10.6px);
+    /* Fallback for older browsers */
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.georgia2-cube-overlay {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    /* Fallback for older browsers */
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Transform compatibility */
+.georgia2-cube:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/* Transition compatibility */
+.georgia2-cube {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.georgia2-cube-overlay {
+    -webkit-transition: backdrop-filter 0.3s ease;
+    -moz-transition: backdrop-filter 0.3s ease;
+    -ms-transition: backdrop-filter 0.3s ease;
+    transition: backdrop-filter 0.3s ease;
+}
+
+/* Different Laptop Screen Sizes for Georgia2 */
+
+/* MacBook Air 13": 1440x900 */
+@media (min-width: 1366px) and (max-width: 1440px) and (min-height: 768px) and (max-height: 900px) {
+    .georgia2-content {
+        padding: 45px 25px;
+    }
+    
+    .georgia2-cubes-grid {
+        max-width: 1100px;
+        gap: 22px;
+    }
+    
+    .georgia2-cube {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.55rem;
+        margin-bottom: 16px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.08rem;
+    }
+}
+
+/* MacBook Pro 14": 3024x1964 (scaled to 1512x982) */
+@media (min-width: 1441px) and (max-width: 1600px) and (min-height: 900px) and (max-height: 1200px) {
+    .georgia2-content {
+        padding: 50px 30px;
+    }
+    
+    .georgia2-cubes-grid {
+        max-width: 1300px;
+        gap: 25px;
+    }
+    
+    .georgia2-cube {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.65rem;
+        margin-bottom: 18px;
+        letter-spacing: 1.1px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.12rem;
+        line-height: 1.6;
+    }
+}
+
+/* MacBook Pro 16": 3456x2234 (scaled to 1728x1117) */
+@media (min-width: 1601px) and (max-width: 1920px) and (min-height: 1000px) and (max-height: 1400px) {
+    .georgia2-content {
+        padding: 55px 35px;
+    }
+    
+    .georgia2-cubes-grid {
+        max-width: 1400px;
+        gap: 28px;
+    }
+    
+    .georgia2-cube {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+        letter-spacing: 1.2px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.15rem;
+        line-height: 1.65;
+    }
+}
+
+/* Surface Laptop/Dell XPS 13": 1920x1080 */
+@media (min-width: 1366px) and (max-width: 1920px) and (min-height: 768px) and (max-height: 1080px) {
+    .georgia2-content {
+        padding: 50px 30px;
+    }
+    
+    .georgia2-cubes-grid {
+        max-width: 1250px;
+        gap: 24px;
+    }
+    
+    .georgia2-cube {
+        width: 270px;
+        height: 270px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.6rem;
+        margin-bottom: 17px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.1rem;
+    }
+}
+
+/* Gaming Laptops: 1920x1080 with high refresh */
+@media (min-width: 1900px) and (max-width: 1920px) and (min-height: 1050px) and (max-height: 1080px) {
+    .georgia2-cubes-grid {
+        max-width: 1350px;
+        gap: 26px;
+    }
+    
+    .georgia2-cube {
+        width: 285px;
+        height: 285px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.65rem;
+        letter-spacing: 1.1px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.12rem;
+    }
+}
+
+/* Ultra-wide laptops: 2560x1440 */
+@media (min-width: 2400px) and (max-width: 2560px) and (min-height: 1350px) and (max-height: 1440px) {
+    .georgia2-content {
+        padding: 60px 40px;
+    }
+    
+    .georgia2-cubes-grid {
+        max-width: 1600px;
+        gap: 32px;
+    }
+    
+    .georgia2-cube {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.8rem;
+        margin-bottom: 22px;
+        letter-spacing: 1.3px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+}
+
+/* Additional tablet breakpoints */
+@media (min-width: 865px) and (max-width: 1024px) {
+    .georgia2-content {
+        padding: 40px 25px;
+    }
+    
+    .georgia2-cubes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        gap: 28px;
+    }
+    
+    .georgia2-cube {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.55rem;
+        margin-bottom: 16px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.08rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1365px) {
+    .georgia2-content {
+        padding: 45px 30px;
+    }
+    
+    .georgia2-cubes-grid {
+        max-width: 1000px;
+        gap: 22px;
+    }
+    
+    .georgia2-cube {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+/* Large desktop screens */
+@media (min-width: 1440px) {
+    .georgia2-cubes-grid {
+        max-width: 1350px;
+        gap: 25px;
+    }
+    
+    .georgia2-cube {
+        width: 275px;
+        height: 275px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 1.1rem;
+    }
+}
+
+/* Browser-specific fixes */
+
+/* Firefox specific */
+@-moz-document url-prefix() {
+    .georgia2-cube {
+        background-color: rgba(255, 255, 255, 0.18);
+    }
+    
+    .georgia2-cube-overlay {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+}
+
+/* Safari specific */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .georgia2-cube {
+            -webkit-backdrop-filter: blur(10.6px);
+            backdrop-filter: blur(10.6px);
+        }
+        
+        .georgia2-cube-overlay {
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+        }
+    }
+}
+
+/* Edge/IE specific fallbacks */
+@supports not (backdrop-filter: blur(10px)) {
+    .georgia2-cube {
+        background-color: rgba(255, 255, 255, 0.22);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .georgia2-cube-overlay {
+        background-color: rgba(255, 255, 255, 0.18);
+    }
+    
+    .georgia2-cube:hover .georgia2-cube-overlay {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* High DPI / Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .georgia2-cube-title {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+    
+    .georgia2-cube-description {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .georgia2-cube {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    .georgia2-cube:hover {
+        transform: none;
+    }
+    
+    .georgia2-cube:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+    
+    .georgia2-cube:active .georgia2-cube-overlay {
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+    }
+}
+
+/* Landscape phone optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .georgia2-content {
+        padding: 20px 15px;
+    }
+    
+    .georgia2-cubes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 100%;
+        gap: 15px;
+    }
+    
+    .georgia2-cube {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .georgia2-cube-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .georgia2-cube-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
+/* Grid layout improvements for different screen sizes */
+@media (min-width: 1200px) {
+    .georgia2-cubes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    .georgia2-cubes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}

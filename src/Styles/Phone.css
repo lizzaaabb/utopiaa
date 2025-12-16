@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/boowie');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.phone-body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+.phone-body.closing {
+  opacity: 0;
+}
+
+.phone-container {
+  width: 300px;
+  height: 100px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.phone-text {
+  flex: 1;
+}
+
+.phone-title {
+  font-family: 'boowie', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0 0 5px 0;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.phone-number {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 2px 0;
+  color: #666;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.line1, .line2 {
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #999;
+  top: 50%;
+  left: 50%;
+}
+
+.line1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.line2 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

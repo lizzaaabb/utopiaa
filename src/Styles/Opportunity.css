@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/boowie');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base Styles */
+.opportunity-body{
+    width: 100%;
+    background: #201f1f; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+
+.opportunity-title{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "boowie", sans-serif;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.looking-for{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.05rem;
+    font-family: 'urbanist', sans-serif;
+    letter-spacing: 0.5px;
+    color: #DCDCDC;
+}
+
+.georgia-place{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.05rem;
+    font-family: 'urbanist', sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    color: #DCDCDC;
+}
+
+.relax{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    font-family: 'urbanist', sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    font-style: italic;
+    color: #DCDCDC;
+}
+
+
+/* Extra Small Screens (up to 359px) */
+@media (max-width: 359px) {
+    .opportunity-title {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    
+    .looking-for,
+    .georgia-place,
+    .relax {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+    
+    .georgia-place {
+        margin-top: 12px;
+    }
+    
+    .relax {
+        margin-top: 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Screens (360px - 480px) */
+@media (min-width: 360px) and (max-width: 480px) {
+    .opportunity-title {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    
+    .looking-for,
+    .georgia-place,
+    .relax {
+        width: 88%;
+        font-size: 0.95rem;
+        padding: 0 5px;
+    }
+    
+    .georgia-place {
+        margin-top: 13px;
+    }
+    
+    .relax {
+        margin-top: 22px;
+        font-size: 1rem;
+    }
+}
+
+/* Medium Small Screens (481px - 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+    .opportunity-title {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
+    
+    .looking-for,
+    .georgia-place,
+    .relax {
+        width: 85%;
+        font-size: 1rem;
+    }
+    
+    .georgia-place {
+        margin-top: 14px;
+    }
+    
+    .relax {
+        margin-top: 23px;
+        font-size: 1.05rem;
+    }
+}
+
+/* Medium Screens (601px - 767px) */
+@media (min-width: 601px) and (max-width: 767px) {
+    .opportunity-title {
+        font-size: 1.9rem;
+        margin-top: 45px;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    
+    .looking-for,
+    .georgia-place,
+    .relax {
+        width: 82%;
+        font-size: 1.02rem;
+    }
+    
+    .georgia-place {
+        margin-top: 14px;
+    }
+    
+    .relax {
+        margin-top: 24px;
+        font-size: 1.08rem;
+    }
+}
+
+/* Tablet Screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .opportunity-title {
+        font-size: 1.95rem;
+        margin-top: 48px;
+        margin-bottom: 30px;
+    }
+    
+    .looking-for,
+    .georgia-place,
+    .relax {
+        width: 80%;
+        font-size: 1.03rem;
+    }
+    
+    .relax {
+        font-size: 1.09rem;
+    }
+}
+
+/* Small Desktop Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .opportunity-title {
+        font-size: 1.98rem;
+    }
+    
+    .looking-for,
+    .georgia-place {
+        font-size: 1.04rem;
+    }
+    
+    .relax {
+        font-size: 1.095rem;
+    }
+}

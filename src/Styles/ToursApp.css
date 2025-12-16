@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/boowie');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tours-app-body{
+    background: #201f1f; 
+}
+.tours-app-container{
+    background: #201f1f; 
+    height: auto;
+    padding-bottom: 100px;
+
+}
+
+.return {
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.return:hover {
+    letter-spacing: 3px;
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg,
+            #808080 0%,
+            #645c45 15%,
+            #857c55 30%,
+            #9d8c5d 50%,
+            #756842 65%,
+            #584d32 85%,
+            #707070 100%
+        );
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 3px 12px 0px;
+}
+
+.return:active {
+    letter-spacing: 3px;
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg,
+            #808080 0%,
+            #645c45 15%,
+            #857c55 30%,
+            #9d8c5d 50%,
+            #756842 65%,
+            #584d32 85%,
+            #707070 100%
+        );
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+  
+  .tours-app-heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  .tours-heading-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .tours-heading-title h2{
+    font-size: 2.4rem;
+    font-family: "boowie", sans-serif;
+    margin-top: 95px;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+
+  }
+
+  .tours-heading-title p{
+    font-size: 1rem;
+    font-family: "Urbanist", sans-serif;
+    color: #999;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  /* tours card */
+
+ /* Grid layout for tours cards */
+ .tours-card-container {
+  display: grid;
+  
+  /* 
+    This is the default for larger screens (desktops, tablets).
+    It creates a grid with 2 columns.
+  */
+  grid-template-columns: repeat(2, 1fr);
+  
+  /* 
+    We do NOT define grid-template-rows. This is the key.
+    The grid will automatically create as many rows as it needs.
+    With 4 items and 2 columns, it will naturally create 2 rows.
+    If you added a 5th item, it would automatically create a 3rd row.
+  */
+  
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 20px 40px 20px;
+}
+  
+  /* Individual tour card styles */
+  .tours-card {
+    position: relative;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .tours-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tours-card-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .tours-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .tours-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .tours-card-content {
+    padding: 20px;
+  }
+  
+  .tours-category {
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .tours-card-content h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+    min-height: 40px;
+  }
+  
+  .tours-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .tours-score {
+    background: linear-gradient(45deg, #ffd700, #ffb347);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .tours-reviews {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .tours-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .tours-discount {
+    color: #4fc3f7;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .tours-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .tours-favorite {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tours-card:hover .tours-favorite {
+    opacity: 1;
+  }
+  
+  .tours-favorite:hover {
+    color: #ff5a60;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive design */
+ 
+  
+ 
+
+  /* tours button */
+
+  .tours-purchase {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg,
+            #808080 0%,
+            #645c45 15%,
+            #857c55 30%,
+            #9d8c5d 50%,
+            #756842 65%,
+            #584d32 85%,
+            #707070 100%
+        );
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'boowie', sans-serif;
+}
+
+.tours-purchase:hover {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1)),
+        linear-gradient(45deg,
+            #808080 0%,
+            #645c45 15%,
+            #857c55 30%,
+            #9d8c5d 50%,
+            #756842 65%,
+            #584d32 85%,
+            #707070 100%
+        );
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(157, 140, 93, 0.4);
+}
+
+.tours-purchase:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(157, 140, 93, 0.3);
+}
+
+.tours-card-content h3{
+    font-size: 1.1rem;
+    font-family: 'boowie', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.tours-category{
+    font-size: 0.7rem;
+    font-family: 'ubanist', sans-serif;
+    font-weight: 300;
+}
+.tours-reviews{
+    font-size: 0.8rem;
+    font-family: 'urbanist', sans-serif;
+    font-weight: 300;
+    color: #999;
+}
+
+.tours-discount{
+    font-size: 0.8rem;
+    font-family: 'urbanist', sans-serif;
+    font-weight: 300;
+    color: #4fc3f7;
+}
+
+.tours-amount{
+    font-size: 1.2rem;
+    font-family: 'urbanist', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.home-button a{
+  text-decoration: none;
+  font-family: 'urbanist', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+
+@media (max-width: 800px) {
+  .tours-card-container {
+    /* 
+      On smaller screens, we change the grid to have only 1 column.
+      The items will now stack vertically.
+    */
+    grid-template-columns: 1fr;
+    
+    /* We can adjust padding for smaller screens if needed */
+    padding: 60px 20px 40px 20px;
+  }
+}

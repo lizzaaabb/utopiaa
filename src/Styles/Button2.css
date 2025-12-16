@@ -1,0 +1,394 @@
+@import url('https://fonts.cdnfonts.com/css/boowie');
+
+.luxury-container {
+  background: linear-gradient(145deg, #ffffff 0%, #fafafa 100%);
+  border-radius: clamp(16px, 4vw, 24px);
+  padding: clamp(6px, 1.5vw, 8px);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.12),
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: clamp(2px, 1vw, 4px);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+  width: auto;
+}
+
+.luxury-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+}
+
+.luxury-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+}
+
+.luxury-button {
+  font-family: 'Boowie', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: clamp(6px, 2vw, 10px);
+  padding: clamp(12px, 3vw, 16px) clamp(16px, 4vw, 24px);
+  border: none;
+  border-radius: clamp(14px, 3vw, 20px);
+  font-size: clamp(11px, 2.5vw, 13px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  position: relative;
+  overflow: hidden;
+  min-width: clamp(100px, 25vw, 130px);
+  max-width: 100%;
+  justify-content: center;
+  letter-spacing: clamp(0.3px, 0.1vw, 0.5px);
+  text-transform: uppercase;
+  flex: 1 1 auto;
+  text-decoration: none; /* Remove default link underline */
+}
+
+.luxury-button:not(.active) {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  color: #6b7280 !important;
+  border: 1px solid rgba(229, 231, 235, 0.6);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Additional specificity for Link components */
+a.luxury-button:not(.active) {
+  color: #6b7280 !important;
+}
+
+a.luxury-button:not(.active):visited {
+  color: #6b7280 !important;
+}
+
+a.luxury-button:not(.active):link {
+  color: #6b7280 !important;
+}
+
+.luxury-button:not(.active) .luxury-icon {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(6%) saturate(570%) hue-rotate(186deg) brightness(94%) contrast(87%);
+}
+
+.luxury-button:not(.active):hover {
+  background: linear-gradient(145deg, #fafbfc, #f1f3f4);
+  color: #374151 !important;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Additional hover specificity for Link components */
+a.luxury-button:not(.active):hover {
+  color: #374151 !important;
+}
+
+.luxury-button.active {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1)),
+              linear-gradient(45deg,
+                #808080 0%,
+                #645c45 15%,
+                #857c55 30%,
+                #9d8c5d 50%,
+                #756842 65%,
+                #584d32 85%,
+                #707070 100%
+              );
+  color: #ffffff !important;
+  box-shadow: 
+    0 12px 40px rgba(157, 140, 93, 0.4),
+    0 6px 16px rgba(157, 140, 93, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Additional active specificity for Link components */
+a.luxury-button.active {
+  color: #ffffff !important;
+}
+
+a.luxury-button.active:visited {
+  color: #ffffff !important;
+}
+
+a.luxury-button.active:link {
+  color: #ffffff !important;
+}
+
+.luxury-button.active .luxury-icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+}
+
+.luxury-button.active .luxury-label {
+  color: #ffffff !important;
+}
+
+.luxury-button.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-button.active:hover::before {
+  left: 100%;
+}
+
+.luxury-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.luxury-button:hover::after {
+  width: clamp(80px, 20vw, 120px);
+  height: clamp(80px, 20vw, 120px);
+}
+
+.luxury-icon {
+  width: clamp(14px, 3.5vw, 18px);
+  height: clamp(14px, 3.5vw, 18px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.luxury-button:hover .luxury-icon {
+  transform: rotate(5deg) scale(1.15);
+}
+
+.luxury-button.active .luxury-icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+  transform: scale(1.1);
+}
+
+.luxury-label {
+  font-size: clamp(10px, 2.2vw, 12px);
+  font-weight: 700;
+  letter-spacing: clamp(0.5px, 0.2vw, 1px);
+  z-index: 1;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.luxury-button.active .luxury-label {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure label color inheritance for non-active buttons */
+.luxury-button:not(.active) .luxury-label {
+  color: inherit !important;
+}
+
+.floating-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: clamp(1px, 0.5vw, 2px);
+  height: clamp(1px, 0.5vw, 2px);
+  background: linear-gradient(45deg, #d4af37, #f4d03f);
+  border-radius: 50%;
+  opacity: 0;
+  animation: float-particle 4s infinite;
+}
+
+.particle:nth-child(1) { 
+  left: 20%; 
+  animation-delay: 0s; 
+}
+
+.particle:nth-child(2) { 
+  left: 40%; 
+  animation-delay: 1s; 
+}
+
+.particle:nth-child(3) { 
+  left: 60%; 
+  animation-delay: 2s; 
+}
+
+.particle:nth-child(4) { 
+  left: 80%; 
+  animation-delay: 3s; 
+}
+
+@keyframes float-particle {
+  0%, 100% { 
+    transform: translateY(100%); 
+    opacity: 0; 
+  }
+  10%, 90% { 
+    opacity: 1; 
+  }
+  50% { 
+    transform: translateY(-20px); 
+    opacity: 0.8; 
+  }
+}
+
+.luxury-glow {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(from 0deg, #d4af37, #f4d03f, #d4af37);
+  border-radius: clamp(18px, 4.5vw, 26px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  animation: rotate-glow 3s linear infinite;
+}
+
+.luxury-container:hover .luxury-glow {
+  opacity: 0.3;
+}
+
+@keyframes rotate-glow {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .luxury-container {
+    width: 100%;
+    max-width: none;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .luxury-button {
+    width: 100%;
+    min-width: unset;
+    flex: none;
+    padding: 14px 20px;
+  }
+  
+  .luxury-label {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .luxury-container {
+    padding: 6px;
+    border-radius: 16px;
+  }
+  
+  .luxury-button {
+    padding: 12px 16px;
+    gap: 8px;
+  }
+  
+  .luxury-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .luxury-label {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1200px) {
+  .luxury-container {
+    max-width: fit-content;
+  }
+  
+  .luxury-button {
+    min-width: 140px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .luxury-button {
+    padding: 16px 24px;
+    min-height: 48px; /* Minimum touch target size */
+  }
+  
+  .luxury-button:hover {
+    transform: none; /* Remove hover transform on touch devices */
+  }
+  
+  .luxury-button:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .luxury-button,
+  .luxury-icon,
+  .luxury-glow {
+    transition: none;
+    animation: none;
+  }
+  
+  .floating-particles {
+    display: none;
+  }
+  
+  .luxury-button:hover::after {
+    display: none;
+  }
+}

@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/boowie');
+
+
+.privacy-policy-page-wrapper {
+    background-color: #201f1f; /* The desired dark background */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top of the flex container */
+    padding: 50px 0; /* Add some vertical padding to the outer wrapper */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+
+.privacy-policy-container {
+  max-width: 900px; /* Adjust as needed */
+  margin: 80px auto 50px auto; /* Top padding to clear heading, centered, bottom padding */
+  padding: 20px 30px;
+  background-color: #fcfcfc; /* A slightly off-white for readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  color: #333; /* Dark gray text for readability */
+  line-height: 1.7;
+  font-family: 'Urbanist', sans-serif;
+  min-height: calc(100vh - 150px); /* Ensures it takes up at least most of the viewport height, considering header/footer */
+}
+
+.privacy-policy-container h1,
+.privacy-policy-container h2,
+.privacy-policy-container h3 {
+  font-family: 'Boowie', sans-serif; /* Use your special font for headings */
+  color: #333; /* Dark grey for headings */
+  margin-top: 1.5em; /* Space above headings */
+  margin-bottom: 0.8em; /* Space below headings */
+  font-weight: 300; /* Match your brand style if possible */
+  letter-spacing: 0.5px;
+}
+.privacy-policy-container p{
+    color: black;
+}
+
+.privacy-policy-container li{
+    color: black;
+}
+
+.home-link{
+    color: #fff;
+}
+
+.privacy-policy-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333; /* Make main title a bit darker */
+  margin-bottom: 1.5em;
+  padding-top: 1em; /* Ensures enough space from the top of the container */
+}
+
+.privacy-policy-container h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #eee; /* Subtle separator */
+  padding-bottom: 0.5em;
+}
+
+.privacy-policy-container h3 {
+  font-size: 1.4rem;
+  margin-top: 1.2em;
+}
+
+.privacy-policy-container h4 {
+  font-size: 1.2rem;
+  margin-top: 1em;
+}
+
+.privacy-policy-container p {
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.privacy-policy-container ul {
+  list-style-type: disc;
+  margin-left: 25px; /* Indent list items */
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+
+.privacy-policy-container li {
+  margin-bottom: 0.5em;
+  font-size: 0.95rem;
+}
+
+.privacy-policy-container a {
+  color: #fff; /* A color that matches your footer's gradient */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.back-to-home {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #645c45; /* Primary brand color from footer */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+}
+
+.home-link:hover {
+  background-color: #707070; /* Darker shade on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    margin: 60px 15px 30px 15px; /* Less margin on smaller screens */
+    padding: 15px 20px;
+  }
+  .privacy-policy-container h1 {
+    font-size: 2rem;
+  }
+  .privacy-policy-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-policy-container {
+    margin: 40px 10px 20px 10px;
+    padding: 10px 15px;
+  }
+  .privacy-policy-container h1 {
+    font-size: 1.8rem;
+  }
+  .privacy-policy-container h2 {
+    font-size: 1.4rem;
+  }
+  .privacy-policy-container p,
+  .privacy-policy-container li {
+    font-size: 0.9rem;
+  }
+}

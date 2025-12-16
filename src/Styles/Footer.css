@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/boowie');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.utopia-footer {
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)),
+    linear-gradient(45deg,
+      #808080 0%,
+      #645c45 15%,
+      #857c55 30%,
+      #9d8c5d 50%,
+      #756842 65%,
+      #584d32 85%,
+      #707070 100%
+    );
+  color: white;
+  padding-top: 80px;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Mobile First - Small devices */
+@media (max-width: 359px) {
+  .footer-container {
+    padding: 2rem 1rem;
+  }
+  
+  .footer-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .footer-container {
+    padding: 2.5rem 1.2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .footer-container {
+    padding: 2.8rem 1.3rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .footer-container {
+    padding: 3rem 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Brand Section */
+.footer-brand {
+  grid-column: span 1;
+}
+
+@media (min-width: 1024px) {
+  .footer-brand {
+    grid-column: span 1;
+  }
+}
+
+.brand-title {
+  font-family: 'Boowie', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 320;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Brand title responsive */
+@media (max-width: 359px) {
+  .brand-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .brand-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .brand-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .brand-title {
+    font-size: 1.65rem;
+  }
+}
+
+.brand-description {
+  font-family: 'Urbanist', sans-serif;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Brand description responsive */
+@media (max-width: 480px) {
+  .brand-description {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .brand-description {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}
+
+.brand-tagline {
+  font-family: 'Urbanist', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* Brand tagline responsive */
+@media (max-width: 600px) {
+  .brand-tagline {
+    text-align: center;
+  }
+}
+
+/* Footer Sections */
+.footer-section {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: 'Boowie', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 320;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Section title responsive */
+@media (max-width: 359px) {
+  .section-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .section-title {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .utopia-footer{
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .section-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+}
+
+.section-list {
+  font-family: 'Urbanist', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-list li {
+  color: white;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+/* Section list responsive */
+@media (max-width: 600px) {
+  .section-list {
+    text-align: center;
+  }
+  
+  .section-list li {
+    font-size: 0.8rem;
+  }
+}
+
+.section-list li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Contact Section */
+.contact-info {
+  font-family: 'Urbanist', sans-serif;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Contact responsive */
+@media (max-width: 600px) {
+  .contact-item {
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+}
+
+.contact-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.footer-bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom-content {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.copyright,
+.specialization {
+  font-family: 'Urbanist', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
+
+.footer-legal-links{
+  font-family: 'Urbanist', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  text-decoration: none;
+  opacity: 0.85;
+}
+.footer-legal-links Link{
+  text-decoration: none;
+}
+
+/* Footer bottom responsive */
+@media (max-width: 480px) {
+  .copyright,
+  .specialization {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .footer-legal-links{
+    font-size: 0.75rem;
+
+  }
+}

@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=red-hat-display@700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/boowie');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset without global color override */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* REMOVED: color: #fff; - This was causing the issue */
+}
+#home {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Landing Container */
+.landing-container {
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    -ms-transition: -ms-transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    
+    z-index: 0;
+    margin-top: -70px;
+}
+
+.landing-container.sidebar-open {
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Main Title Container */
+.main-title {
+    text-align: center;
+}
+
+/* Landing Title - Now with explicit white color */
+.landing-title {
+    font-family: "boowie", sans-serif;
+    margin-left: 25px;
+    font-size: 3.3rem;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 800px;
+    max-width: 90%;
+    color: #ffffff; /* Explicit white color */
+    
+    -ms-transition: none;
+    -webkit-transition: none;
+    transition: none;
+}
+
+/* Second Title - Now with explicit white color */
+.second-title {
+    text-align: center;
+}
+
+.second-title p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 150;
+    letter-spacing: 2px;
+    width: 900px;
+    max-width: 95%;
+    text-align: center;
+    color: #ffffff; /* Explicit white color */
+    
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.663);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=0, Strength=3);
+}
+
+/* Button2 Container */
+.button2-container {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Discover More Circle (if you still need it) */
+.discover-container {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    text-decoration: none;
+    
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    
+    gap: 30px;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    padding: 60px 20px 41px;
+    cursor: pointer;
+    
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.discover-container:hover {
+    background-color: rgba(247, 247, 247, 0.123);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1FF7F7F7', endColorstr='#1FF7F7F7');
+}
+
+.discover-text {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.discover-text p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff; /* Explicit white color */
+}
+
+.discover-bars {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    
+    gap: 7px;
+}
+
+.discover-bar,
+.discover-bar2 {
+    background-color: #ffffff; /* Explicit white color */
+    height: 1.5px;
+}
+
+.discover-bar {
+    width: 34px;
+}
+
+.discover-bar2 {
+    width: 26px;
+}
+
+/* Enhanced Media Queries */
+@media screen and (max-width: 359px) {
+    .landing-title {
+        font-size: 1.2rem !important;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 300px;
+        max-width: 90%;
+    }
+
+    .second-title p {
+        font-size: 0.8rem;
+        width: 340px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover-container {
+        margin-top: 50px;
+        gap: 25px;
+        padding: 47px 20px 41px;
+    }
+
+    .discover-text p {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .landing-container {
+        margin-top: -90px;
+        width: 100%;
+    }
+    
+    .landing-title {
+        font-size: 1.4rem !important;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 340px;
+        max-width: 95%;
+    }
+
+    .second-title p {
+        font-size: 0.8rem;
+        width: 340px;
+        font-weight: 300;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover-container {
+        margin-top: 50px;
+        gap: 25px;
+        padding: 47px 20px 41px;
+    }
+
+    .discover-text p {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .landing-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 10px;
+        width: 450px;
+        max-width: 90%;
+    }
+
+    .second-title p {
+        font-size: 0.9rem;
+        width: 430px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover-container {
+        margin-top: 50px;
+        gap: 25px;
+        padding: 47px 20px 41px;
+    }
+
+    .discover-text p {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    .landing-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 10px;
+        margin-top: 60px;
+        width: 600px;
+        max-width: 90%;
+    }
+
+    .second-title p {
+        font-size: 1rem;
+        width: 530px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover-container {
+        margin-top: 50px;
+        gap: 25px;
+        padding: 47px 20px 41px;
+    }
+
+    .discover-text p {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 864px) {
+    .landing-title {
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+        width: 700px;
+        max-width: 90%;
+    }
+
+    .second-title p {
+        font-size: 1rem;
+        width: 530px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover-container {
+        margin-top: 50px;
+        gap: 25px;
+        padding: 47px 20px 41px;
+    }
+
+    .discover-text p {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 865px) and (max-width: 1024px) {
+    .landing-title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        max-width: 90%;
+    }
+}
+
+/* IE-specific fixes */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .landing-container {
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+    }
+    
+    .discover-container {
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+    }
+}
+
+/* Internet Explorer Specific Styles */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .landing-title {
+        font-family: "Urbanist", sans-serif;
+        font-size: 3rem;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 800px;
+        max-width: 90%;
+        margin-top: 80px;
+        color: #ffffff;
+        
+        -ms-transition: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+@media screen and (-ms-high-contrast: none) {
+    .landing-title {
+        font-family: "Urbanist", sans-serif;
+        font-size: 3rem;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 800px;
+        max-width: 90%;
+        margin-top: 80px;
+        color: #ffffff;
+        
+        -ms-transition: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+@supports (-ms-ime-align: auto) {
+    .landing-title {
+        font-family: "Urbanist", sans-serif;
+        font-size: 3rem;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 800px;
+        max-width: 90%;
+        margin-top: 80px;
+        color: #ffffff;
+        
+        -ms-transition: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
